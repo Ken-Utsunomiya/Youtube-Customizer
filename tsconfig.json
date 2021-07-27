@@ -18,9 +18,21 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "paths": {
+      "@containers": ["./src/containers"],
+      "@components": ["./src/components"],
+    }
   },
   "include": [
     "src"
-  ]
+  ],
+  "rules": {
+    "interface-name": false,
+    "member-access": false,
+    "no-console": false,
+    "object-literal-sort-keys": false,
+    "ordered-imports": false,
+  },
+  "defaultSeverity": "warning"
 }
